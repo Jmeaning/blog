@@ -1,0 +1,92 @@
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:100;src:url(./fonts/NotoSansKR-Thin.woff) format('woff');   }
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:300;src:url(./fonts/NotoSansKR-Light.woff) format('woff');  }
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:400;src:url(./fonts/NotoSansKR-Regular.woff) format('woff');}
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:500;src:url(./fonts/NotoSansKR-Medium.woff) format('woff'); }
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:700;src:url(./fonts/NotoSansKR-Bold.woff) format('woff');   }
+@font-face {font-family:NotoSans_KR;font-style: normal;font-weight:900;src:url(./fonts/NotoSansKR-Black.woff) format('woff');  }
+$white :white;
+
+.app{
+  display: flex;
+  justify-content: center;
+  .container{ 
+    width: 1024px;
+    .link{
+      font-family:NotoSansKR, sans-serif;font-weight: 500;
+      text-decoration: none;
+      color: inherit
+    }
+
+   
+    .auth{ 
+      font-family:NotoSansKR, sans-serif;font-weight: 500; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: white;
+
+      h1{ 
+        font-family:NotoSansKR, sans-serif;font-weight: 500; 
+        font-size: 20px;
+        color: black;
+        margin-bottom: 20px;
+
+      }
+      form{ 
+        font-family:NotoSansKR, sans-serif;font-weight: 500; 
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        width: 200px;;
+        gap: 20px;
+        
+        input{ font-family:NotoSansKR, sans-serif;font-weight: 500; 
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+        button{
+          font-family:NotoSansKR, sans-serif;font-weight: 500; 
+          padding: 10px;
+          border: none;
+          background-color: gray;
+          cursor: pointer;
+          color: $white
+
+        }
+        p{font-family:NotoSansKR, sans-serif;font-weight: 500; 
+          font-size: 12px;
+          color: red;
+          text-align: center;
+
+        }
+        span{font-family:NotoSansKR, sans-serif;font-weight: 500; 
+          font-size: 12px;
+          text-align: center;
+        }      
+      }
+    }
+    .navbar{ 
+      font-family:NotoSansKR, sans-serif;font-weight: 500; 
+      .container{ 
+        padding: 10px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+          img{
+          width: 140px;
+          }
+        }
+        .links{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+
+  }
+}
